@@ -35,9 +35,9 @@ zcat schema.sql.gz | mysql -u root zabbix_proxy -p
 
 cd /etc/zabbix/
 
-mv zabbix-proxy.conf zabbix-proxy.conf.bak
+mv zabbix_proxy.conf zabbix_proxy.conf.bak
 
-grep -v '^DB*' zabbix-proxy.conf.bak > zabbix-proxy.conf
+grep -v '^DB*' zabbix_proxy.conf.bak > zabbix_proxy.conf
 
 echo -e 'DBHost=localhost \nDBName=zabbix_proxy \nDBUser=zabbix \nDBPassword=zabbix' >> zabbix-proxy.conf
 

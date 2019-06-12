@@ -35,9 +35,9 @@ zcat create.sql.gz | mysql -u root zabbix -p
 
 cd /etc/zabbix/
 
-mv zabbix-server.conf zabbix-server.conf.bak
+mv zabbix_server.conf zabbix_server.conf.bak
 
-grep -v '^DB*' zabbix-server.conf.bak > zabbix-server.conf
+grep -v '^DB*' zabbix_server.conf.bak > zabbix_server.conf
 
 echo -e 'DBHost=localhost \nDBName=zabbix \nDBUser=zabbix \nDBPassword=zabbix' >> zabbix-server.conf
 
